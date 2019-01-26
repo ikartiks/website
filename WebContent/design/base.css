@@ -15,7 +15,8 @@ body,html{
     padding:0;
     -webkit-font-smoothing:antialiased;
     font-family: 'Noto Sans TC', sans-serif;
-    font-weight:300
+    font-weight:300;
+    overflow: hidden;
 }
 .content a,body{
     position:relative
