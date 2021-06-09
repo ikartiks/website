@@ -52,6 +52,55 @@
          </div>
          
          <hr>
+         
+         <div class='projectParent'>
+            <div class="projectDescription">
+               <div class="name fontHeading">Volt Bank - Contracting via frollo</div>
+               <div class="time fontDescription">Nov 2020 - June 2021</div>
+               <div class="description fontContentSmall">
+                  <p>One of my most aesthetically pleasing projects, loaded with RX & lotties.I worked on the backing apps dashboard, savings challenge, mock feature & made a few releases as well.
+                  </p>
+               </div>
+               <div class="links">
+                  <a target="_blank"
+                     href="https://www.voltbank.com.au/">
+                  Get the app here</a>
+               </div>
+            </div>
+            
+           <div class='projectImages'>
+               <div class="swiper-container sc6">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <div class='centerImages'>
+                           <img src="images/loading.svg" data-src="images/appScreens/vb1.png" class='lazyload phoneOnly'>
+                        </div>
+                     </div>
+                     
+                     <div class="swiper-slide">
+                        <div class='centerImages'>
+                           <img src="images/loading.svg" data-src="images/appScreens/vb2.png" class='lazyload phoneOnly'>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class='centerImages'>
+                           <img src="images/loading.svg" data-src="images/appScreens/vb3.png" class='lazyload phoneOnly'>
+                        </div>
+                     </div>
+                     <div class="swiper-slide">
+                        <div class='centerImages'>
+                           <img src="images/loading.svg" data-src="images/appScreens/vb4.png" class='lazyload phoneOnly'>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-button-next snext6"></div>
+                  <div class="swiper-button-prev sprev6"></div>
+               </div>
+               <div class="swiper-pagination sp6"></div>
+            </div>
+         </div>
+         <hr>
+         
          <div class='projectParent'>
             <div class="projectDescription">
                <div class="name fontHeading">Frollo</div>
@@ -514,6 +563,22 @@
         		el : '.sp5',
         	},
         });
+      
+      mySwiper = new Swiper('.sc6', {
+      	init : true,
+      	direction : 'horizontal', // or 'vertical'
+      	touchEventsTarget : 'container',
+      	initialSlide : 0,
+      	speed : 300,
+      	preventInteractionOnTransition : false,
+      	navigation : {
+      		nextEl : '.snext6',
+      		prevEl : '.sprev6',
+      	},
+      	pagination : {
+      		el : '.sp6',
+      	},
+      });
       
       var gotoLanding=function(){
     	  /* if(window.location.hostname=='localhost'){
